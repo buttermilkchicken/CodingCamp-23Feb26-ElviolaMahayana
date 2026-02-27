@@ -1,0 +1,55 @@
+*{
+    margin: 0 ;padding: 0;
+    box-sizing: border-box;
+     font-family: "Sour Gummy", sans-serif;
+     outline: none; border: none;
+     text-decoration: none;
+     text-transform: capitalize;
+     transition: .2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+    font-size: 60%;
+}
+
+body{
+    background-color: #a4b485;
+}
+
+header{
+    color: white;
+  
+    top:0; left:0; right: 0;
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    color: white;
+    margin-left: 4rem;
+}
+
+header .navbar a:hover, .navbar a.active{
+    color: rgb(122, 241, 122);
+    border-bottom: 2px solid rgb(122, 241, 122);
+}
+
+home-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/banner.jpg');
+
+}
