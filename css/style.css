@@ -73,7 +73,7 @@ header .navbar a:hover, .navbar a.active{
     width: 100%;
     min-height: 65vh;
     align-items: center;
-    background: url('assets/banner_spirited_away.png') no-repeat;
+    background: url('/assets/banner_spirited_away.png') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
