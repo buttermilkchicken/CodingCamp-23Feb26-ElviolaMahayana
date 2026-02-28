@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghibli Studio</title>
+    <title>Studio Ghibli</title>
 
     <!-- CSS External -->
      <link rel="stylesheet" href="css/style.css">
-     
-        <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&amp;display=swap" rel="stylesheet"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
     <!-- Header Content -->
      <header>
-        <p class="logo">Ghibli Studio</p>
+        <p class="logo">Studio Ghibli</p>
         <nav class="navbar">
             <a href="#home-page">Home</a>
             <a href="#our-profile-page">Our Profile</a>
@@ -27,7 +27,7 @@
         <!--Home Page Content -->
         <section id="home-page" class="home-page">
             <div class="home-content">
-                <h2>Hi Jane, Welcome to</h2>
+                <h2>Hi <span id="username"></span>, Welcome to</h2>
                 <h1>Studio Ghibli</h1>
                 <h3>Inspiration unlocks the future</h3>
                 <br>
@@ -37,24 +37,149 @@
 
         <!-- Our Profile Page Content -->
         <section id="our-profile-page" class="profile-page">
-            <div class="about-us-content">
-                <h1>About Us</h1>
+            <!-- About Us Content -->
+            <div class="about-us-container">
+                <div class="about-us-image">
+                    <img src="assets/about_us.jpg" alt="About Ghibli Studio">
+                </div>
+                <div class="about-us-content">
+                    <h1>About Us</h1>
+                <p>
+                   Studio Ghibli is a world-renowned Japanese animation film studio celebrated for its imaginative storytelling, emotional depth, and breathtaking hand-drawn artistry. Founded in 1985, the studio has created timeless films that captivate audiences of all ages across the globe.
+                </p>
+                <br>
+                <p>
+                    At Studio Ghibli, we believe that stories have the power to inspire, heal, and transform. Our films explore themes of courage, friendship, love, family, and the deep connection between humanity and nature. Through beautifully crafted characters and magical worlds, we strive to create meaningful experiences that stay in the hearts of viewers long after the credits roll.
+                </p>
+                </div>
+            </div>
+
+            <!-- Mission and Vission Content -->
+            <div class="mission-vision-container">
+                <div class="mission-vision-box">
+                    <h2>Mission</h2>       
+                    <p>To produce heartfelt movies with rich storytelling, meaningful characters, and hand-drawn artistry that honor emotion, creativity, and cultural depth-bringing wonder and warmth to every generation.</p>             
+                </div>
+
+                <div class="mission-vision-box">
+                    <h2>Vision</h2> 
+                    <p>To create timeless animated stories that celebrate imagination, humanity, and the beauty of nature, inspiring audiences of all ages around the world.</p>
+                </div>
+            </div>
+
+            <div class="headquarter-container">
+                <div class="headquarter-content">
+                    <h1>Our Headquarter</h1>
+                    <div class="address-content">
+                        <i class="fa-solid fa-location-dot"></i>                        
+                        <div class="address-text">
+                            <p>Kajino-chō, Koganei, Tokyo, Japan</p>
+                            <p>東京都小金井市梶野町</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="headquarter-image">
+                    <img src="assets/studio_ghibli_office.jpg" alt="About Ghibli Studio">
+                </div>
+                
             </div>
         </section>
 
         <!-- Portofolio Page Content -->
-        <!-- <section id="portofolio-page">
-            <h1>This is Portofolio page</h1>
-        </section> -->
+        <section id="portofolio-page" class="portofolio-page">
+            <h1>Our Portofolio</h1>
+            <div class="portofolio-container">
+                <div class="portofolio-card">
+                    <img src="assets/arietty_image.jpg" alt="portofolio image">
+                    <div class="portofolio-card-content">
+                        <h3>Arrietty</h3>
+                        <p>When a tiny "borrower" named Arrietty makes friends with a young boy many times her size, she must also shield her family from his towering elders.</p>
+                    </div>
+                </div>
+                <div class="portofolio-card">
+                    <img src="assets/grave_of_the_fireflies_image.jpg" alt="portofolio image">
+                    <div class="portofolio-card-content">
+                        <h3>Grave of the Fireflies</h3>
+                        <p>Two orphans fight for survival in post-World War II Japan, but society is harsh and they struggle with finding food and escaping the hardships of war.</p>
+                    </div>
+                </div>
+                <div class="portofolio-card">
+                    <img src="assets/howl_image.jpg" alt="portofolio image">
+                    <div class="portofolio-card-content">
+                        <h3>Howl's Moving Castle</h3>
+                        <p>Teenager Sophie works in her late father's hat shop in a humdrum town, but things get interesting when she's transformed into an elderly woman.</p>
+                    </div>
+                </div>
+                 <div class="portofolio-card">
+                    <img src="assets/spirited_away_image.jpg" alt="portofolio image">
+                    <div class="portofolio-card-content">
+                        <h3>Spirited Away</h3>
+                        <p>A 10-year-old girl named Chihiro wanders into a mysterious world where a witch rules — and those who disobey her are turned into animals.</p>
+                    </div>
+                </div>
+                 <div class="portofolio-card">
+                    <img src="assets/totoro_image.png" alt="portofolio image">
+                    <div class="portofolio-card-content">
+                        <h3>My Neighbor Totoro</h3>
+                        <p>While spending a summer in the Japanese countryside with their father, two young sisters befriend mystical creatures who live in the nearby forest.</p>
+                    </div>
+                </div>
+                 <div class="portofolio-card">
+                    <img src="assets/the_wind_rises.jpeg" alt="portofolio image">
+                    <div class="portofolio-card-content">
+                        <h3>The Wind Rises</h3>
+                        <p>A decades-spanning tale inspired by the life of Jirô Horikoshi, designer of the World War II fighter plane the Zero.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button">Read More</button>
+        </section>
 
         <!-- Message Us Content -->
-        <!-- <section id="message-us-page">
-            <h1>This is Message Us page</h1>
-        </section> -->
+        <section id="message-us-page" class="message-us-section">       
+            <div class="message-us-container">
+                <div class="message-us-form">
+                    <form id="contact-form">
+                        <h2>Message Us</h2>    
+                        <div class="message-us-input-box">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Your Name" id="name">
+                        </div>
+                        <div class="message-us-input-box">
+                             <label for="email">Email</label>
+                            <input type="text" name="email" placeholder="Email" id="email">    
+                        </div>    
+                        <div class="message-us-input-box">
+                            <label for="date of birth">Date of Birth</label>
+                            <input type="date" name="date of birth" placeholder="Date of Birth" id="dob">       
+                        </div> 
+                        <div class="message-us-gender-row">
+                            <span class="message-us-gender-title">Gender</span>
+                            <div class="message-us-gender-category">
+                                <input type="radio" name="gender" id="male" value="Male"> 
+                                <label for="gender">Male</label>
+                                <input type="radio" name="gender" id="female" value="Female"> 
+                                <label for="gender">Female</label>
+                            </div> 
+                        </div>
+                        <div class="message-us-input-box">
+                            <label for="message">Message</label>
+                            <textarea type="text" name="message" placeholder="Message" id="message"></textarea>   
+                        </div>  
+                        <button type="submit">Send Message</button>          
+                    </form>
+                </div>
+                <div class="information-container" id="information-container">
+                    <h2>See your information here</h2>
+                </div>
+            </div>   
+        </section>
      </main>
 
      <!-- Footer Content -->
-      <footer></footer>    
+      <footer>
+        <h1>Studio Ghibli</h1>
+      </footer>    
 
       <!-- JavaScript External -->
        <script src="js/script.js"></script>

@@ -4,22 +4,38 @@
      font-family: "Sour Gummy", sans-serif;
      outline: none; border: none;
      text-decoration: none;
-     text-transform: capitalize;
      transition: .2s linear;
 }
 
-@media (max-width: 900px) {
-    html{
-        font-size: 62.5%;
-    }
+html{
+    font-size: 70%;
+}
 
+@media (max-width: 900px) {
     header{
         padding: 2rem;
     }
 }
 
+@media (max-width: 750px) {
+   .about-us-container{
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .headquarter-container{
+    flex-direction: column;
+    text-align: center;
+   }
+   
+   .message-us-container{
+    flex-direction: column;
+    text-align: center;
+   }
+}
+
 body{
-    background-color: #334460;
+    background-color: #374c6e;
 }
 
 header{
@@ -50,11 +66,8 @@ header .navbar a:hover, .navbar a.active{
     border-bottom: 2px solid white;
 }
 
-section{
-    padding: 2rem 5%;
-}
-
 .home-page{
+    padding: 2rem 5%;
     position: relative;
     color: white;
     width: 100%;
@@ -75,7 +88,7 @@ section{
 }
 
 .home-page .home-content h1{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .home-page .home-content h3{
@@ -90,4 +103,313 @@ section{
     color: white;
 }
 
+.about-us-container{
+    background-color: #334460;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
 
+.about-us-container .about-us-image{
+   position: relative;
+   flex: 1;
+}
+
+.about-us-image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.about-us-content{
+    flex: 1;
+}
+
+.about-us-content h1{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.about-us-content p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.mission-vision-container{
+    padding: 2rem 5%;
+    min-height: 40vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.mission-vision-box{
+    padding: 2rem;
+    flex: 1;
+}
+
+.mission-vision-box h2{
+    font-size: 3rem;
+    color: #3b6089
+}
+
+.mission-vision-box p{
+    font-size: 1.5rem;
+    color: #3b6089
+}
+
+.headquarter-container{
+    padding: 2rem 5%;
+    background-color: #63809b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.headquarter-container .headquarter-image{
+   position: relative;
+   flex: 1;
+}
+
+.headquarter-image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.headquarter-content{
+    flex: 1;
+}
+
+.headquarter-content h1{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.headquarter-content p{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.address-content{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.address-content i{
+    font-size: 5rem;
+    color: white;
+}
+
+.address-text{
+    text-align: left;
+}
+
+.portofolio-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 5%;
+    gap: 3rem;
+}
+
+.portofolio-card{
+    width: 30%;
+    min-width: 280px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.portofolio-card img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.portofolio-card-content{
+   padding: 1.2rem;
+   margin-bottom: 1rem;
+}
+
+.portofolio-card-content h3{
+   font-size: 2rem;
+   color: #334460;
+}
+
+.portofolio-card-content p{
+   font-size: 1.2rem;
+   line-height: 1.6;
+   color: #334460;
+}
+
+.portofolio-page h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.portofolio-page button{
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #63809b;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.message-us-container{
+    background-color: #26354d;
+    gap: 2rem;
+    display: flex;
+    padding: 2rem 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-us-form{
+    border-radius: 10px;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.message-us-form h2{
+    text-align: left;
+    color: white;
+    font-size: 3rem;
+    padding-bottom: .5rem;
+}
+
+.message-us-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.message-us-input-box label, .message-us-gender-title{
+    font-size: 2rem;
+    color: white;
+}
+
+.message-us-input-box input, .message-us-input-box textarea{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1rem 1.4rem;
+    height: auto;
+    min-height: 50px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.message-us-input-box input::placeholder,
+.message-us-input-box textarea::placeholder {
+    color: #888;
+    color-scheme: light;  
+}
+
+.message-us-input-box input[type="date"] {
+    color: #888;
+    color-scheme: light;        
+}
+
+.message-us-gender-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-us-gender-category{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.message-us-input-box textarea{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1rem 1.4rem;
+    height: auto;
+    min-height: 100px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.message-us-form button{
+    font-size: 2rem;
+    margin-top: 2rem;
+    align-self: stretch;
+    background-color: #63809b;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.information-container{
+    text-align: left;
+    border-radius: 10px;
+    flex:1;
+    background-color: white;
+    align-self: stretch;
+    min-height: 100%;
+    padding: 2rem;
+}
+
+.information-container h2{
+    color: #aaa;
+    font-size: 2rem;
+}
+
+.information-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.information-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.information-row span:first-child {
+    font-size: 1.5rem;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.information-row span:last-child {
+    font-size: 1.5rem;
+    color: #26354d;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #26354d;
+    text-align: right;
+    padding: 2rem 5%;
+}
+
+footer h1{
+    font-size: 1.5rem;
+    color: white
+}
